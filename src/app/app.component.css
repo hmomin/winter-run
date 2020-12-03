@@ -1,0 +1,45 @@
+.messages {
+    text-align: center;
+}
+
+.bottom-margin {
+    height: 60px;
+}
+
+.button-container {
+    margin-top: 5px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+button {
+    background-color: #226644;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 35px;
+    width: 60px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #44cc88;
+    transition: 0.5s;
+}
+
+.active {
+    background-color: #44cc88;
+}
+
+a {
+    color: #aaeeaa;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #77ee77;
+    text-decoration: none;
+}
