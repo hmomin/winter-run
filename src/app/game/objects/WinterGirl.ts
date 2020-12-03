@@ -116,7 +116,7 @@ export default class WinterGirl extends Phaser.Physics.Arcade.Sprite {
             }, 2000);
         } else if (!this.invulnerable) {
             if (this.debug) {
-                console.log("Game Over disabled (debug mode)");
+                // console.log("Game Over disabled (debug mode)");
             } else {
                 this.scene.gameOver = true;
             }

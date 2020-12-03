@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "clear && ng serve --open",
-        "build": "ng build --source-map=false --prod --extractCss=false && node utils/defer.styles.js",
+        "start": "ng serve --open",
+        "build": "ng build --prod --source-map=false --extractCss=false && node utils/defer.styles.js",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"

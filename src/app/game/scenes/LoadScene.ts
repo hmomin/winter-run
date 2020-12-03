@@ -12,8 +12,6 @@ export default class LoadScene extends Phaser.Scene {
     }
 
     preload() {
-        console.log("LoadScene: enter preload()");
-
         // loading bar
         this.loadingBar = this.add.graphics({
             fillStyle: {

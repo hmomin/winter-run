@@ -15,7 +15,6 @@ export default class TitleScene extends Phaser.Scene {
     }
 
     create() {
-        console.log("TitleScene: enter create()");
         // get settings
         this.gameSettings = JSON.parse(
             localStorage.getItem("winterRunSettings")
