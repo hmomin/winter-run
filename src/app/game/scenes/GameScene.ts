@@ -32,7 +32,7 @@ export default class GameScene extends Phaser.Scene {
     gameOver = false;
     gameEnded = false;
     wonGame = false;
-    beginTime = 100;
+    beginTime = 60;
     timeRemaining = this.beginTime;
     train: boolean;
     fitnesses: Array<number>;
@@ -627,6 +627,8 @@ export default class GameScene extends Phaser.Scene {
                     setTimeout(() => {
                         this.timeRemaining = this.beginTime;
                         this.scene.start("title");
+                        this.wonGame = false;
+                        this.gameEnded = false;
                     }, 1000);
                 }, 3000);
             }
