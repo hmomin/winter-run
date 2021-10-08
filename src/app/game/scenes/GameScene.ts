@@ -274,7 +274,7 @@ export default class GameScene extends Phaser.Scene {
         );
         this.gameOverText = this.add.text(
             this.cam.width / 2,
-            this.cam.height / 2,
+            (3 * this.cam.height) / 10,
             "GAME OVER",
             {
                 fontFamily: "Arial",
@@ -286,7 +286,7 @@ export default class GameScene extends Phaser.Scene {
         this.gameOverText.visible = false;
         this.wonGameText = this.add.text(
             this.cam.width / 2,
-            this.cam.height / 2,
+            (3 * this.cam.height) / 10,
             "YOU WIN!",
             {
                 fontFamily: "Arial",
@@ -613,7 +613,6 @@ export default class GameScene extends Phaser.Scene {
             if (this.train) {
                 this.iterCount++;
                 this.fitnesses.push(this.computeFitness());
-                // console.log(this.fitnesses);
                 this.restartScene();
             } else {
                 this.physics.pause();
@@ -815,8 +814,6 @@ export default class GameScene extends Phaser.Scene {
         // first, initialize population if it doesn't exist
         this.population = this.initializePopulation();
         this.avgFitness.push(Math.round(this.population.getAverageFitness()));
-        // console.log("average fitness:");
-        // console.log(this.avgFitness);
         if (this.avgFitness.length > 100) {
             this.avgFitness = [];
         }

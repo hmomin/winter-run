@@ -19,15 +19,6 @@ export default class LoadScene extends Phaser.Scene {
             },
         });
 
-        // loading text
-        this.loadingText = this.add.text(
-            this.game.scale.width / 2,
-            this.game.scale.height * 0.4,
-            "0%",
-            { fontFamily: "Arial" }
-        );
-        this.loadingText.setOrigin(0.5, 0.5);
-
         this.assetText = this.add.text(50, 50, "", { fontFamily: "Arial" });
 
         this.load.on("progress", (percentage) => {
@@ -37,7 +28,6 @@ export default class LoadScene extends Phaser.Scene {
                 (this.game.scale.width - 100) * percentage,
                 50
             );
-            this.loadingText.setText(Math.round(percentage * 100) + "%");
         });
         this.load.on("fileprogress", (file) => {
             this.assetText.setText("Loading " + file.key + "...");
