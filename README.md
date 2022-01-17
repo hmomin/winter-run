@@ -1,4 +1,4 @@
-# Winter Run
+# NOTE: Winter Run has now been solved with PPO! Please navigate [here](https://github.com/hmomin/ppo-winter-run) to check it out and disregard everything below.
 
 Winter Run is a game written in TypeScript, Angular, and Phaser that can learn to play itself via a custom genetic algorithm. You can play it live [here](https://winter-run.com)! After 1000 generations of training over the span of three weeks, the best neural network can make it about halfway through the game. It's possible that a different learning algorithm (for instance, deep Q-learning) may have been able to successfully complete the game.
 
